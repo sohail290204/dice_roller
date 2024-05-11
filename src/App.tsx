@@ -78,18 +78,18 @@ export default function App() {
           <View style={styles.btn}>
             <Text style={styles.text}>Click here to Roll</Text>
           </View>
-          <Text style={[isDarkMode ? styles.textDark : styles.textLight]}> Number is {num1}</Text>
         </Pressable>
       </View>
       <View style={styles.his}>
-      <Text style={[styles.textLight1]}>History: {history.join(', ')}</Text>
+        <Text style={styles.textLight}> Number is {num1}</Text>
+        <Text style={[styles.textLight1]}>History: {history.join(', ')}</Text>
       </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-  his:{
+  his: {
     margin: 20,
     borderRadius: 15,
     backgroundColor: '#c1cb41',
@@ -125,7 +125,7 @@ const styles = StyleSheet.create({
   },
   btn: {
     marginVertical: 50,
-    height: 55,
+
     width: 230,
     borderRadius: 15,
     justifyContent: 'center',
